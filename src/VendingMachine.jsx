@@ -1,5 +1,6 @@
 import Candy from './Candy';
 import Drink from './Drink';
+import Chip from './Chips';
 
 const VendingMachine = (props) => {
   return ( 
@@ -14,6 +15,12 @@ const VendingMachine = (props) => {
         <Drink drink={{name: "Sprite", fizz:1}}/>
         <Drink drink={{name: "Water", fizz:0}}/>
         <Drink drink={{name: "Orange Juice", fizz:0}}/>
+      </div>
+      <div> <h2>Chips</h2>
+      <Chip chip={{name: "Fritos", vegan: true, gluten: true}} />
+      <Chip chip={{name: "Sour Cream & Onion", vegan: false, gluten: true}} />
+      <Chip chip={{name: "Pringles: Cheese & Onion", vegan: false, gluten: false}} />
+
       </div>
 
     </div>
